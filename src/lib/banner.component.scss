@@ -1,0 +1,42 @@
+.attus-mat-banner {
+  background: #ffffff;
+  z-index: 9;
+  &.desktop {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    &::ng-deep {
+      attus-mat-banner-text {
+        padding: 1rem;
+        text-align: left;
+        flex: 1 1 auto;
+      }
+      attus-mat-banner-actions {
+        padding: 1rem;
+        text-align: right;
+        flex: 1 1 auto;
+      }
+    }
+  }
+  &.mobile {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    &::ng-deep {
+      attus-mat-banner-text {
+        display: block;
+        padding: 1rem;
+        text-align: left;
+      }
+      attus-mat-banner-actions {
+        display: block;
+        padding: 1rem;
+        text-align: right;
+      }
+    }
+  }
+}
